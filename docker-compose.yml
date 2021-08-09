@@ -25,7 +25,7 @@ services:
     ports:
       - ${PSQL_PORT}
     volumes:
-      - db-data:/var/lib/postgresql:cached
+      - db-data:/var/lib/postgresql/data
       - ./:/application:cached
     networks:
       - elastic
